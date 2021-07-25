@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Hiring Coders - Cadastro de Produtos</title>
+</head>
+<body class="d-flex">
+    <div class="cover-container d-flex w-100">
+
+    <header class="mb-auto">
+        <a href="../index.html"><img src="../assets/coffee.png" alt="Logotipo"></a>
+        <h1>Gestão de produtos</h1>
+    </header>
+    <main class="content">
+    <button type="button" class="btn btn-secondary" id="cadastrarProduto">Cadastrar produto</button>
+    <table id = "tableProduct" class="client-data">
+        <thead>
+            <tr>
+                <th>SKU</th>
+                <th>Produto</th>
+                <th>Estoque</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo produto</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form">
+                    <div class="form-floating">
+                        <label for="codigo">SKU</label>
+                        <input type="text" placeholder="SKU" id="codigo" data-index="new">
+                    </div>
+                    <div class="form-floating">
+                        <label for="produto">Produto</label>
+                        <input type="text" placeholder="Produto" id="produto">
+                    </div>
+                    <div class="form-floating">
+                        <label for="estoque">Estoque</label>
+                        <input type="text" placeholder="Estoque" id="estoque">
+                    </div>
+                    
+                    <input value="Enviar" class="btn btn-secondary" id="salvar">
+                </form>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados &copy; <a href="https://github.com/raquelvargasdev">Raquel Vargas</a></p>
+    </footer>
+    </div>
+    <script src="../js/produto.js"></script>
+</body>
+</html>

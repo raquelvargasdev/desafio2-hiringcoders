@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Hiring Coders - Cadastro de Clientes</title>
+</head>
+<body class="d-flex">
+    <div class="cover-container d-flex w-100">
+
+    <header class="mb-auto">
+        <a href="../index.html"><img src="../assets/coffee.png" alt="Logotipo"></a>
+        <h1>Gestão de clientes</h1>
+    </header>
+    <main class="content">
+    <button type="button" class="btn btn-secondary" id="cadastrarCliente">Cadastrar cliente</button>
+    <table id = "tableClient" class="client-data">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form">
+                    <div class="form-floating">
+                        <label for="nome">Nome</label>
+                        <input type="text" placeholder="Nome" id="nome" data-index="new">
+                    </div>
+                    <div class="form-floating">
+                        <label for="email">E-mail</label>
+                        <input type="email" placeholder="nome@provedor.com" id="email">
+                    </div>
+                    <div class="form-floating">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" placeholder="Cidade" id="cidade">
+                    </div>
+
+
+                    
+                    <input value="Enviar" class="btn btn-secondary" id="salvar">
+                </form>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados &copy; <a href="https://github.com/raquelvargasdev">Raquel Vargas</a></p>
+    </footer>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>
